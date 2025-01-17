@@ -21,7 +21,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build Lean LEDE for RAC2V1K
+name: Build Lean LEDE for R7800
 
 on:
   workflow_dispatch:
@@ -42,15 +42,15 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: x4s.config
   DIY_P1_SH: lean-lede-diy-part1.sh
   DIY_P2_SH: lean-lede-diy-part2.sh
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
-  TZ: Asia/Ho_Chi_Minh
+  TZ: Asia/Shanghai
 
 jobs:
   check:
