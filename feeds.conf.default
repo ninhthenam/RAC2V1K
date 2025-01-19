@@ -2,5 +2,5 @@ src-git packages https://github.com/coolsnowwolf/packages
 src-git luci https://github.com/coolsnowwolf/luci
 src-git routing https://github.com/coolsnowwolf/routing
 src-git telephony https://git.openwrt.org/feed/telephony.git
-#echo src-git openwrt https://github.com/kenzok8/litte.git
+#echo 'src-git openwrt https://github.com/kenzok8/litte.git'
 src-git openwrt https://github.com/kiddin9/kwrt-packages.git
